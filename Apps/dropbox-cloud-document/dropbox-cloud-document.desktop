@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Dropbox Cloud Document
+NoDisplay=trueExec=/home/fata/Apps/dropbox-cloud-document/handler.sh %F

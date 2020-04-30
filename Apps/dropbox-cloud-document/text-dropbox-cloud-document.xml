@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+    <mime-type type="text/dropbox-paper">
+        <comment>Dropbox Paper Cloud Document File</comment>
+        <glob-deleteall/>
+        <generic-icon name="x-office-document"/>
+	<glob pattern="*.paper"/>
+    </mime-type>
+
+    <mime-type type="text/dropbox-gdoc">
+        <comment>Google Docs Cloud Document File</comment>
+        <glob-deleteall/>
+        <generic-icon name="x-office-document"/>
+	<glob pattern="*.gdoc"/>
+    </mime-type>
+
+    <mime-type type="text/dropbox-gsheet">
+        <comment>Google Spreadsheet Cloud Document File</comment>
+        <glob-deleteall/>
+        <generic-icon name="x-office-spreadsheet"/>
+	<glob pattern="*.gsheet"/>
+    </mime-type>
+
+    <mime-type type="text/dropbox-gslides">
+        <comment>Google Slides Cloud Document File</comment>
+        <glob-deleteall/>
+        <generic-icon name="x-office-presentation"/>
+	<glob pattern="*.gslides"/>
+    </mime-type>
+</mime-info>
+
+	
