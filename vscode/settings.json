@@ -1,0 +1,31 @@
+{
+    "editor.formatOnSave": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+
+    // declutter ui
+    "breadcrumbs.enabled": false,
+    "editor.minimap.enabled": false,
+    "window.customTitleBarVisibility": "never",
+    "window.title": "${activeEditorMedium}${separator}${rootName}${separator}${profileName}",
+    "window.titleBarStyle": "native",
+    "workbench.activityBar.location": "top",
+    "workbench.sideBar.location": "right",
+    "workbench.statusBar.visible": false,
+    "workbench.startupEditor": "none",
+
+    // git
+    "git.blame.editorDecoration.enabled": false,
+    "git.blame.editorDecoration.template": "<${authorEmail}> ${subject} (${authorDateAgo})",
+
+    // vscodevim
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindings": [
+        {"before": ["g", "I"], "commands": ["editor.action.goToImplementation"]},
+        {"before": ["g", "B"], "commands": ["git.blame.toggleEditorDecoration"]},
+    ],
+
+    // go
+    "go.formatTool": "gofumpt",
+}

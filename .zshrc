@@ -12,13 +12,16 @@ alias glh="git log --oneline | head -n 1"
 alias gst="git status"
 alias gp="git push"
 alias ga="git add"
+alias gco="git checkout"
+alias gcb="git checkout -b"
+alias gbv="git branch -v"
+alias gfa="git fetch --all --prune"
 
 # dir traversals
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 
+# p10k
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
