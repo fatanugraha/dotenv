@@ -1,0 +1,7 @@
+# https://ghostty.org/docs/config/reference
+
+window-padding-x = 8
+window-height = 30
+window-width = 120
+macos-titlebar-proxy-icon = hidden
+theme = Dark Modern
