@@ -18,6 +18,7 @@ alias gbv="git branch -v"
 alias gfa="git fetch --all --prune"
 alias lg="lazygit"
 alias vim="nvim"
+alias ll="ls -la"
 
 # dir traversals
 alias ..="cd .."
