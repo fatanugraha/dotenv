@@ -6,7 +6,7 @@ fi
 # git
 alias gc="git commit"
 alias gcm="git commit -m"
-alias gcad="git commit --amend"
+alias gcad="git commit --amend --no-edit"
 alias glo="git log --oneline"
 alias glh="git log --oneline | head -n 1"
 alias gst="git status"
@@ -16,6 +16,8 @@ alias gco="git checkout"
 alias gcb="git checkout -b"
 alias gbv="git branch -v"
 alias gfa="git fetch --all --prune"
+alias lg="lazygit"
+alias vim="nvim"
 
 # dir traversals
 alias ..="cd .."
@@ -25,3 +27,6 @@ alias ....="cd ../../.."
 # p10k
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# mise
+eval "$(~/.local/bin/mise activate zsh)"
