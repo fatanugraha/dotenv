@@ -2,6 +2,9 @@
 
 ## ghostty
 
+prereq: jetbrains mono font installed
+
+
 ```
 mkdir -p $HOME/.config/ghostty
 ln -s $PWD/ghostty/config $HOME/.config/ghostty/config
@@ -22,7 +25,8 @@ ln -s $PWD/.hushlogin $HOME/.hushlogin
 we can't use symlink ([ref](https://github.com/microsoft/vscode/issues/194856))
 
 ```
-cp $PWD/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+mkdir -p "$HOME/Library/Application Support/Code/User"
+cp $PWD/vscode/settings.json "$HOME/Library/Application Support/Code/User/settings.json"
 ```
 
 ## nvim
@@ -31,10 +35,21 @@ TODO
 
 ## mac configs
 
-1. use touchid for sudo
-2. remove dock authoide delay
-3. config keyboard
-   1. remove key repeat delay
-   2. remap capslock to esc
-   3. use fn keys 
+- [ ] Dock
+    - [ ] Remove all apps
+    - [ ] Enable auto hide
+    - [ ] remove auto hide delay [ref](https://apple.stackexchange.com/questions/33600/how-can-i-make-auto-hide-show-for-the-dock-faster)
+- [ ] Enable File Vault
+- [ ] Displays
+    - [ ] More Space
+- [ ] Keyboard
+    - [ ] Key Repeat Rate: fast
+    - [ ] Delay Until Repeat: short
+    - [ ] Disable PressAndHold
+- [ ] Modifier Keys
+    - [ ] CapsLock -> Esc
+- [ ] Function Keys
+    - [ ] Use F1, F2, etc as standard function keys
+- [ ] Etc
+    - [ ] Enable TouchID for sudo auth [script](https://github.com/artginzburg/sudo-touchid)
 

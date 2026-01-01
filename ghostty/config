@@ -5,3 +5,4 @@ window-height = 30
 window-width = 120
 macos-titlebar-proxy-icon = hidden
 theme = Dark Modern
+font-family = "JetBrains Mono"
