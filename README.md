@@ -9,11 +9,12 @@ ln -s $PWD/ghostty/config $HOME/.config/ghostty/config
 
 ## .zshrc
 
-prereq: p10k installed via brew
+prereq: p10k and mise installed via brew
 
 ```
 ln -s $PWD/.zshrc $HOME/.zshrc
 ln -s $PWD/.p10k.zsh $HOME/.p10k.zsh
+ln -s $PWD/.hushlogin $HOME/.hushlogin
 ```
 
 ## vscode
