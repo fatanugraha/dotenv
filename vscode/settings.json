@@ -3,9 +3,12 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-
+    "editor.rulers": [
+        120
+    ],
     // declutter ui
     "breadcrumbs.enabled": false,
+    "chat.disableAIFeatures": true,
     "editor.minimap.enabled": false,
     "window.customTitleBarVisibility": "never",
     "window.title": "${activeEditorMedium}${separator}${rootName}${separator}${profileName}",
@@ -14,18 +17,53 @@
     "workbench.sideBar.location": "right",
     "workbench.statusBar.visible": false,
     "workbench.startupEditor": "none",
-
     // git
-    "git.blame.editorDecoration.enabled": false,
-    "git.blame.editorDecoration.template": "<${authorEmail}> ${subject} (${authorDateAgo})",
-
+    "git.blame.editorDecoration.enabled": true,
+    "git.blame.editorDecoration.template": "${authorDateAgo} ${authorEmail} | ${subject}",
     // vscodevim
     "vim.useSystemClipboard": true,
     "vim.normalModeKeyBindings": [
-        {"before": ["g", "I"], "commands": ["editor.action.goToImplementation"]},
-        {"before": ["g", "B"], "commands": ["git.blame.toggleEditorDecoration"]},
+        {
+            "before": [
+                "g",
+                "I"
+            ],
+            "commands": [
+                "editor.action.goToImplementation"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "B"
+            ],
+            "commands": [
+                "git.blame.toggleEditorDecoration"
+            ]
+        },
     ],
-
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<C-o>"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.navigateBack"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<C-i>"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.navigateForward"
+                }
+            ]
+        }
+    ],
     // go
-    "go.formatTool": "gofumpt",
+    "go.formatTool": "gofumpt"
 }
