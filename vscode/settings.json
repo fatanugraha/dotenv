@@ -3,6 +3,7 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
+    "editor.fontFamily": "JetBrains Mono",
     "editor.rulers": [
         120
     ],
@@ -65,5 +66,5 @@
         }
     ],
     // go
-    "go.formatTool": "gofumpt"
+    "go.formatTool": "gofumpt",
 }
