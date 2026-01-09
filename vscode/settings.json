@@ -22,6 +22,9 @@
     "git.blame.editorDecoration.enabled": true,
     "git.blame.editorDecoration.template": "${authorDateAgo} ${authorEmail} | ${subject}",
     // vscodevim
+    "vim.leader": " ",
+    "vim.easymotion": true,
+    "vim.surround": true,
     "vim.useSystemClipboard": true,
     "vim.normalModeKeyBindings": [
         {
@@ -41,9 +44,19 @@
             "commands": [
                 "git.blame.toggleEditorDecoration"
             ]
-        },
+        }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "s"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "s"
+            ]
+        },
         {
             "before": [
                 "<C-o>"
@@ -67,4 +80,7 @@
     ],
     // go
     "go.formatTool": "gofumpt",
+    "go.coverOnSingleTestFile": true,
+    "go.coverOnSingleTest": true,
+    "go.inlayHints.parameterNames": true
 }
