@@ -49,6 +49,50 @@
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": [
+                "/"
+            ],
+            "commands": [
+                {
+                    "command": "actions.find"
+                },
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                ":",
+                "s",
+                "/"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.startFindReplaceAction"
+                }
+            ],
+            "silent": true
+        },
+        {
+            "before": [
+                "<C-k>"
+            ],
+            "after": [
+                "<C-u>",
+                "z",
+                "z"
+            ]
+        },
+        {
+            "before": [
+                "<C-j>"
+            ],
+            "after": [
+                "<C-d>",
+                "z",
+                "z"
+            ]
+        },
+        {
+            "before": [
                 "s"
             ],
             "after": [
