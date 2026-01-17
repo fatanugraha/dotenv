@@ -26,9 +26,14 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 
 # p10k
-source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+if [[ $(uname) == "Darwin" ]]; then
+	# perhaps let's install it via git instead so we that we can remove the if-else here?
+	source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+else
+	source ~/.powerlevel10k/powerlevel10k.zsh-theme
+fi
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # mise
-eval "$(mise activate zsh)"
 export PATH="$HOME/.local/bin:$PATH"
+eval "$(mise activate zsh)"

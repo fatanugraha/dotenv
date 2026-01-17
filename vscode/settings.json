@@ -11,13 +11,18 @@
     "breadcrumbs.enabled": false,
     "chat.disableAIFeatures": true,
     "editor.minimap.enabled": false,
-    "window.customTitleBarVisibility": "never",
+    "workbench.navigationControl.enabled": false,
     "window.title": "${activeEditorMedium}${separator}${rootName}${separator}${profileName}",
     "window.titleBarStyle": "native",
     "workbench.activityBar.location": "top",
     "workbench.sideBar.location": "right",
     "workbench.statusBar.visible": false,
     "workbench.startupEditor": "none",
+    // decultter-ui -- but only required in linux
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "window.customTitleBarVisibility": "never",
+    "window.menuBarVisibility": "hidden",
     // git
     "git.blame.editorDecoration.enabled": true,
     "git.blame.editorDecoration.template": "${authorDateAgo} ${authorEmail} | ${subject}",
@@ -73,7 +78,7 @@
         },
         {
             "before": [
-                "<C-k>"
+                "<C-u>"
             ],
             "after": [
                 "<C-u>",
@@ -83,7 +88,7 @@
         },
         {
             "before": [
-                "<C-j>"
+                "<C-d>"
             ],
             "after": [
                 "<C-d>",
@@ -126,5 +131,5 @@
     "go.formatTool": "gofumpt",
     "go.coverOnSingleTestFile": true,
     "go.coverOnSingleTest": true,
-    "go.inlayHints.parameterNames": true
+    "go.inlayHints.parameterNames": true,
 }
